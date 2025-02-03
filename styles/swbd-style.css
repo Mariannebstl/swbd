@@ -1,0 +1,11 @@
+.character-sheet {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+.character-sheet input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 3px;
+}

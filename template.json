@@ -1,0 +1,18 @@
+{
+    "actor": {
+      "character": {
+        "type": "character",
+        "name": "Nouveau Personnage",
+        "img": "icons/svg/mystery-man.svg",
+        "system": {
+          "attributes": {
+            "pv": { "value": 10, "max": 10 },
+            "force": { "value": 5 },
+            "dexterite": { "value": 5 },
+            "constitution": { "value": 5 }
+          }
+        }
+      }
+    }
+  }
+  

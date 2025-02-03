@@ -1,0 +1,11 @@
+<form class="sheet character-sheet">
+    <header class="sheet-header">
+        <h1><input type="text" name="name" value="{{actor.name}}" placeholder="Nom du Personnage"/></h1>
+    </header>
+
+    <section class="sheet-body">
+        <label>Points de Vie:</label>
+        <input type="number" name="system.attributes.pv.value" value="{{system.attributes.pv.value}}"/>
+        / <input type="number" name="system.attributes.pv.max" value="{{system.attributes.pv.max}}"/>
+    </section>
+</form>
