@@ -1,7 +1,7 @@
 {
   "id": "swbd",
   "title": "SWBD System",
-  "version": "0.003",
+  "version": "0.004",
   "description": "Je sais pas ce que je fais mais je code des trucs.",
   "manifest": "https://raw.githubusercontent.com/Mariannebstl/swbd/refs/heads/main/system.json",
   "download": "https://github.com/Mariannebstl/swbd/archive/refs/heads/main.zip",
@@ -29,11 +29,11 @@
       "path": "lang/fr.json"
     }
   ],
-  "types": {
+  "type": {
     "actors": ["character", "npc"],
     "items": ["weapon", "object"]
   },
-  "templates": {
+  "template": {
     "actors": {
       "character": "templates/sheets/character-sheet.html",
       "npc": "templates/sheets/npc-sheet.html"
