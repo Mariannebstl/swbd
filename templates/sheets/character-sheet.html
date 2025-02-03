@@ -1,7 +1,6 @@
 <form class="sheet character-sheet">
-    <img src="{{actor.img}}" alt="Character Image" class="character-image"/>    
-<h1><input type="text" name="name" value="{{actor.name}}" placeholder="Nom du Personnage"/></h1>
-
+    <img src="{{actor.img}}" alt="Character Image" class="character-image" id="character-image"/>
+    <input type="file" name="character-image" accept="image/*" id="character-image-input" style="display: none;"/>
 
     <section class="sheet-body">
         <h2>Points de Vie</h2>
@@ -15,3 +14,5 @@
         <input type="number" name="system.skills.athletisme.value" value="{{system.skills.athletisme.value}}"/>
     </section>
 </form>
+
+<script src="path/to/character-sheet.js"></script>

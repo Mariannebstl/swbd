@@ -1,3 +1,4 @@
+//lier la feuille de personnage à l'acteur
 class SWBDCharacterSheet extends ActorSheet {
     static get defaultOptions() {
       return mergeObject(super.defaultOptions, {
@@ -17,3 +18,7 @@ class SWBDCharacterSheet extends ActorSheet {
   
   Actors.registerSheet("swbd-system", SWBDCharacterSheet, { makeDefault: true });
   
+  //permettre le changement d'image de l'acteur
+  document.getElementById('character-image').addEventListener('click', function() {
+    document.getElementById('character-image-input').click();
+});
