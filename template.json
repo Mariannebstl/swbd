@@ -1,52 +1,36 @@
 {
-  "actors": {
+  "Actor": {
+
+    "types": ["character","npc"],
+
     "character": {
-      "type": "character",
-      "name": "Nouveau Personnage",
-      "img": "icons/svg/mystery-man.svg",
-      "system": {
         "attributes": {
-          "pv": { "value": 10, "max": 10 },
-          "force": { "value": 5 },
-          "dexterite": { "value": 5 },
-          "constitution": { "value": 5 }
+          "pv": { "value": 10, "min": 0, "max": 10 }
         },
         "skills": {
-          "athletisme": { "value": 2 },
-          "pilotage": { "value": 1 }
+          "athletisme": { "value": 0 }
         }
-      }
+      
     },
+    
     "npc": {
-      "type": "npc",
-      "name": "Nouveau PNJ",
-      "img": "icons/svg/mystery-man.svg",
-      "system": {
-        "attributes": {
-          "pv": { "value": 20, "max": 20 },
-          "attaque": { "value": 3 }
+      "attributes": {
+          "pv": { "value": 10, "min": 0, "max": 10 }
+        },
+        "skills": {
+          "athletisme": { "value": 0 }
         }
-      }
     }
+
   },
 
-  "items": {
-    "weapon": {
-      "type": "weapon",
-      "name": "Nouvelle Arme",
-      "img": "icons/svg/sword.svg",
-      "system": {
-        "degats": { "value": "1d6" },
-        "portee": { "value": "mêlée" }
-      }
-    },
-    "object": {
-      "type": "object",
-      "name": "Nouvel Objet",
-      "img": "icons/svg/box.svg",
-      "system": {
-        "description": { "value": "Un objet mystérieux." }
-      }
-    }
+  "Item": {
+
+  "types": ["item"],
+
+  "item": {
+    "description": ""
   }
+}
+
 }
