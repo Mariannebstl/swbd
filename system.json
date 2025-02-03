@@ -28,5 +28,19 @@
       "name": "Français",
       "path": "lang/fr.json"
     }
-  ] 
+  ],
+  "types": {
+    "actors": ["character", "npc"],
+    "items": ["weapon", "object"]
+  },
+  "templates": {
+    "actors": {
+      "character": "templates/sheets/character-sheet.html",
+      "npc": "templates/sheets/npc-sheet.html"
+    },
+    "items": {
+      "weapon": "templates/sheets/item-weapon.html",
+      "object": "templates/sheets/item-object.html"
+    }
+  } 
 }
