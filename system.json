@@ -17,7 +17,7 @@
     }
   ],
   "esmodules": [
-    "scripts/character-sheet.js"
+    "scripts/sheets.js"
   ],
   "styles": [
     "styles/swbd-style.css"
