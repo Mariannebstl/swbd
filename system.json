@@ -20,7 +20,7 @@
     "scripts/sheets.js"
   ],
   "styles": [
-    "styles/swbd-style.css"
+    "styles/sheet-style.css"
   ],
   "languages": [
     {

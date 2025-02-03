@@ -1,0 +1,13 @@
+.window-content {
+    background: rgb(245,235,252);
+    background: radial-gradient(circle, rgba(245,235,252,1) 0%, rgba(233,243,255,1) 100%);
+    font-family: 'Avenir', sans-serif;
+}
+
+
+
+.character-sheet input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 3px;
+}
