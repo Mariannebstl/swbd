@@ -3,7 +3,7 @@ class SWBDCharacterSheet extends ActorSheet {
       return mergeObject(super.defaultOptions, {
         template: "systems/swbd/templates/sheets/character-sheet.html",
         classes: ["swbd", "sheet", "character"],
-        width: 600,
+        width: 800,
         height: 400,
         tabs: [{ navSelector: ".tabs", contentSelector: ".sheet-body", initial: "attributes" }]
       });
