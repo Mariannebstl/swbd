@@ -1,8 +1,8 @@
 class SWBDCharacterSheet extends ActorSheet {
     static get defaultOptions() {
       return mergeObject(super.defaultOptions, {
-        template: "systems/swbd-system/templates/sheets/character-sheet.html",
-        classes: ["swbd-system", "sheet", "character"],
+        template: "systems/swbd/templates/sheets/character-sheet.html",
+        classes: ["swbd", "sheet", "character"],
         width: 600,
         height: 400,
         tabs: [{ navSelector: ".tabs", contentSelector: ".sheet-body", initial: "attributes" }]
