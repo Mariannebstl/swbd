@@ -1,0 +1,36 @@
+{
+  "id": "swbd-system",
+  "title": "SWBD System",
+  "version": "0.1",
+  "description": "Un système vierge pour Foundry VTT basé sur SWBD.",
+  "authors": [
+    {
+      "name": "Marianne",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "esmodules": [
+    "scripts/character.js"
+  ],
+  "styles": [
+    "styles/swbd-style.css"
+  ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  }
+  
+}
