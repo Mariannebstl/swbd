@@ -2,9 +2,13 @@
   "id": "swbd",
   "title": "SWBD System",
   "version": "0.1",
-  "description": "Un système vierge pour Foundry VTT basé sur SWBD.",
+  "description": "Je sais pas ce que je fais mais je code des trucs.",
   "manifest": "https://raw.githubusercontent.com/Mariannebstl/swbd/refs/heads/main/system.json",
   "download": "https://github.com/Mariannebstl/swbd/archive/refs/heads/main.zip",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
   "authors": [
     {
       "name": "Marianne",
@@ -23,16 +27,6 @@
       "lang": "fr",
       "name": "Français",
       "path": "lang/fr.json"
-    },
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
     }
-  ],
-  "compatibility": {
-    "minimum": "12",
-    "verified": "12"
-  }
-  
+  ] 
 }
