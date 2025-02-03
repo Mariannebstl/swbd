@@ -4,8 +4,14 @@
     </header>
 
     <section class="sheet-body">
-        <label>Points de Vie:</label>
-        <input type="number" name="system.attributes.pv.value" value="{{system.attributes.pv.value}}"/>
+        <h2>Points de Vie</h2>
+        <input type="number" name="system.attributes.pv.value" value="{{system.attributes.pv.value}}" min="0" max="{{system.attributes.pv.max}}"/>
         / <input type="number" name="system.attributes.pv.max" value="{{system.attributes.pv.max}}"/>
+    </section>
+
+    <section class="sheet-body">
+        <h2>Compétences</h2>
+        <label>Athlétisme</label>
+        <input type="number" name="system.skills.athletisme.value" value="{{system.skills.athletisme.value}}"/>
     </section>
 </form>
