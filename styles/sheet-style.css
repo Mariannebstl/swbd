@@ -1,13 +1,204 @@
+/****changer a couleur native de la surbrillance des boutons*****/
+:root {
+    --color-shadow-primary: rgb(167 24 63);
+    --color-shadow-highlight: rgb(147 16 79);
+    --color-border-highlight-alt: rgb(213 54 98);
+    --color-border-highlight: rgb(255 0 67);
+    --color-text-hyperlink: #701E68;
+    --color-violet:#491634;
+}
+
+#logo {
+    display: none;
+}
+
+#controls {
+    padding: 10px 15px; 
+}
+
+button {
+    background: rgb(71,18,107);
+    background: linear-gradient(90deg, rgba(71,18,107,1) 0%, rgba(138,37,101,1) 84%, rgba(201,50,91,1) 100%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Cutive Mono', monospace;
+}
+
 .window-content {
-    background: rgb(245,235,252);
-    background: radial-gradient(circle, rgba(245,235,252,1) 0%, rgba(233,243,255,1) 100%);
     font-family: 'Avenir', sans-serif;
+    background: rgb(245,235,252)!important;
+    background: radial-gradient(circle, rgba(245,235,252,1) 0%, rgba(233,243,255,1) 100%)!important;
+}
+
+.sheet {
+    display: block;
+}
+
+img {
+    border:none!important;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: 'Cutive Mono', monospace;
+    text-decoration: underline dotted rgb(197, 197, 197);
+    text-underline-offset : 3px;
+    border-bottom: none;
+}
+
+/**************TABS****************/
+.tabs-sheet {
+    position: absolute;
+    right:-50px;/* Pour qu'ils dépassent sur le côté */
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tab-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color: #3e3e3ee7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #666;
+}
+
+.tab-button i {
+    pointer-events: none;
+}
+
+.tab-button.active {
+    box-shadow:0 0 10px var(--color-shadow-primary); /* Ombre sur la droite */
+    background-color: #555;
 }
 
 
-
-.character-sheet input {
-    border: 1px solid #ddd;
-    padding: 5px;
-    border-radius: 3px;
+ /*************HEADER**************/
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
+
+.character-image {
+    max-width: 250px;
+}
+
+/*************INPUTS**************/
+input[type="number"] {
+    border: none!important;
+    border-radius: 5px!important;
+    text-align: center;
+    margin: 0%;
+    width: 40px;
+}
+
+/************COMPETENCES************/
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+
+.skill label {
+    font-family: 'Cutive Mono', monospace;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    font-size: 14px;
+    color: var(--color-violet);
+}
+
+.skill input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    background: white;
+    color: var(--color-violet);
+}
+
+/**secondaire**/
+.skills-layout {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.skills-column {
+    flex: 1;
+    padding: 10px;
+    
+}
+
+.secondary-skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.secondary-skills-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px dotted #444;
+}
+
+.skill-label {
+    flex: 2;
+    color: var(--color-violet)
+}
+
+.skill-attr {
+    flex: 1;
+    font-size: 10px;
+    color: #505050;
+}
+
+.skill-value {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    color:black;
+}
+
+.secondary-skills-list input[type="checkbox"] {
+    flex: 0.5;
+    transform: scale(1.2);
+}
+
+

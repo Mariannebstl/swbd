@@ -1,3 +1,4 @@
+//lier la fiche de personnage à l'acteur
 class SWBDCharacterSheet extends ActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
@@ -14,6 +15,10 @@ class SWBDCharacterSheet extends ActorSheet {
     data.system = foundry.utils.deepClone(this.actor.system); // Empêche l'effacement des données
     return data;
   }
+
+  
+
+///////////////////ECOUTEURS D'EVENEMENTS///////////////
 
   activateListeners(html) {
     super.activateListeners(html);
@@ -47,7 +52,28 @@ class SWBDCharacterSheet extends ActorSheet {
 
       await this.actor.update({ [`system.${name}`]: value });
     });
+
+
+    // Gestion des onglets
+    html.find(".tab-button").click((event) => {
+      const tab = event.currentTarget.dataset.tab;
+      html.find(".tab-content").hide();
+      html.find(`#${tab}`).show();
+
+      // Ajouter la classe active
+      html.find(".tab-button").removeClass("active");
+      html.find(event.currentTarget).addClass("active");
+  });
+
+
+  // Afficher l'onglet "Compétences" par défaut
+  html.find("#skills").show();
+  html.find('.tab-button[data-tab="skills"]').addClass("active");
   }
 }
 
 Actors.registerSheet("swbd-system", SWBDCharacterSheet, { makeDefault: true });
+
+////////////////////////////////////////////////////////////////
+
+
