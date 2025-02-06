@@ -17,7 +17,7 @@
     }
   ],
   "esmodules": [
-    "scripts/sheets.js"
+    "scripts/scripts.js"
   ],
   "styles": [
     "styles/sheet-style.css"
