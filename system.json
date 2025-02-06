@@ -17,7 +17,8 @@
     }
   ],
   "esmodules": [
-    "scripts/scripts.js"
+    "scripts/scripts.js",
+    "scripts/character-sheet.js"
   ],
   "styles": [
     "styles/sheet-style.css"

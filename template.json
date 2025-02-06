@@ -1,7 +1,7 @@
 {
   "Actor": {
 
-    "types": ["character","npc"],
+    "types": ["personnage","npc","test"],
 
     "character": {
         "attributes": {
@@ -51,6 +51,13 @@
         "skills": {
           "athletisme": { "value": 0 }
         }
+    },
+
+    "test": {
+      "attributes": {
+          "pv": { "value": 10, "min": 0, "max": 10 }
+        }
+        
     }
 
   },
