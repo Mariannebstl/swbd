@@ -196,9 +196,6 @@ input[type="number"] {
     color:black;
 }
 
-.secondary-skills-list input[type="checkbox"] {
-    flex: 0.5;
-    transform: scale(1.2);
-}
+
 
 
