@@ -4,45 +4,44 @@
     "types": ["PJ","PNJ"],
 
     "PJ": {
-        "attributes": {
-          "pv": { "value": 10, "min": 0, "max": 10 }
-        },
-        "skills": {
-        "strength": { "value": 10, "min": 0, "max": 99 },
-        "dexterity": { "value": 10, "min": 0, "max": 99 },
-        "constitution": { "value": 10, "min": 0, "max": 99 },
-        "intelligence": { "value": 10, "min": 0, "max": 99 },
-        "wisdom": { "value": 10, "min": 0, "max": 99 },
-        "charisma": { "value": 10, "min": 0, "max": 99 }
-      },
-
-      "secondarySkills": {
-    "athletics": { "value": 0, "attribute": "strength", "proficient": false },
-    "power": { "value": 0, "attribute": "strength", "proficient": false },
-    "acrobatics": { "value": 0, "attribute": "dexterity", "proficient": false },
-    "sleightOfHand": { "value": 0, "attribute": "dexterity", "proficient": false },
-    "stealth": { "value": 0, "attribute": "dexterity", "proficient": false },
-    "reflex": { "value": 0, "attribute": "dexterity", "proficient": false },
-    "fortitude": { "value": 0, "attribute": "constitution", "proficient": false },
-    "technology": { "value": 0, "attribute": "intelligence", "proficient": false },
-    "history": { "value": 0, "attribute": "intelligence", "proficient": false },
-    "investigation": { "value": 0, "attribute": "intelligence", "proficient": false },
-    "nature": { "value": 0, "attribute": "intelligence", "proficient": false },
-    "piloting": { "value": 0, "attribute": "dexterity", "proficient": false },
-    "repair": { "value": 0, "attribute": "intelligence", "proficient": false },
-    "insight": { "value": 0, "attribute": "wisdom", "proficient": false },
-    "medicine": { "value": 0, "attribute": "wisdom", "proficient": false },
-    "perception": { "value": 0, "attribute": "wisdom", "proficient": false },
-    "survival": { "value": 0, "attribute": "wisdom", "proficient": false },
-    "will": { "value": 0, "attribute": "wisdom", "proficient": false },
-    "deception": { "value": 0, "attribute": "charisma", "proficient": false },
-    "intimidation": { "value": 0, "attribute": "charisma", "proficient": false },
-    "performance": { "value": 0, "attribute": "charisma", "proficient": false },
-    "persuasion": { "value": 0, "attribute": "charisma", "proficient": false }
-}
-
-      
+  "attributes": {
+    "pv": { "value": 10, "min": 0, "max": 10 }
+  },
+  "skills": {
+    "primary": {
+      "strength": { "value": 10, "min": 0, "max": 99 },
+      "dexterity": { "value": 10, "min": 0, "max": 99 },
+      "constitution": { "value": 10, "min": 0, "max": 99 },
+      "intelligence": { "value": 10, "min": 0, "max": 99 },
+      "wisdom": { "value": 10, "min": 0, "max": 99 },
+      "charisma": { "value": 10, "min": 0, "max": 99 }
     },
+    "secondary": {
+      "athletics": { "value": 0, "attribute": "strength", "proficient": false },
+      "power": { "value": 0, "attribute": "strength", "proficient": false },
+      "acrobatics": { "value": 0, "attribute": "dexterity", "proficient": false },
+      "sleightOfHand": { "value": 0, "attribute": "dexterity", "proficient": false },
+      "stealth": { "value": 0, "attribute": "dexterity", "proficient": false },
+      "reflex": { "value": 0, "attribute": "dexterity", "proficient": false },
+      "fortitude": { "value": 0, "attribute": "constitution", "proficient": false },
+      "technology": { "value": 0, "attribute": "intelligence", "proficient": false },
+      "history": { "value": 0, "attribute": "intelligence", "proficient": false },
+      "investigation": { "value": 0, "attribute": "intelligence", "proficient": false },
+      "nature": { "value": 0, "attribute": "intelligence", "proficient": false },
+      "piloting": { "value": 0, "attribute": "dexterity", "proficient": false },
+      "repair": { "value": 0, "attribute": "intelligence", "proficient": false },
+      "insight": { "value": 0, "attribute": "wisdom", "proficient": false },
+      "medicine": { "value": 0, "attribute": "wisdom", "proficient": false },
+      "perception": { "value": 0, "attribute": "wisdom", "proficient": false },
+      "survival": { "value": 0, "attribute": "wisdom", "proficient": false },
+      "will": { "value": 0, "attribute": "wisdom", "proficient": false },
+      "deception": { "value": 0, "attribute": "charisma", "proficient": false },
+      "intimidation": { "value": 0, "attribute": "charisma", "proficient": false },
+      "performance": { "value": 0, "attribute": "charisma", "proficient": false },
+      "persuasion": { "value": 0, "attribute": "charisma", "proficient": false }
+    }
+  }
+},
     
     "PNJ": {
       "attributes": {
