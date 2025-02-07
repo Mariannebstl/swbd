@@ -16,17 +16,18 @@
       "url": ""
     }
   ],
-  "esmodules": [
-    "scripts/scripts.js"
-  ],
-  "styles": [
-    "styles/sheet-style.css"
-  ],
+  "esmodules": ["scripts/scripts.js"],
+  "styles": ["styles/style.css"],
   "languages": [
     {
       "lang": "fr",
       "name": "Français",
       "path": "lang/fr.json"
     }
-  ] 
-}
+  ],
+    "actors": {
+      "types": ["pj", "pnj"],
+      "default": "pnj"
+    }
+  }  
+

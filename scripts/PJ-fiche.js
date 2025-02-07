@@ -1,9 +1,9 @@
 //lier la fiche de personnage à l'acteur
-class SWBDCharacterSheet extends ActorSheet {
+export class PJfiche extends ActorSheet {
     static get defaultOptions() {
       return foundry.utils.mergeObject(super.defaultOptions, {
-        template: "systems/swbd/templates/sheets/character-sheet.html",
-        classes: ["swbd", "sheet", "character"],
+        template: "systems/swbd/templates/sheets/PJ-fiche.html",
+        classes: ["swbd", "sheet", "PJ"],
         width: 800,
         height: 800,
         tabs: [{ navSelector: ".tabs", contentSelector: ".sheet-body", initial: "attributes" }]
@@ -71,8 +71,6 @@ class SWBDCharacterSheet extends ActorSheet {
     html.find('.tab-button[data-tab="skills"]').addClass("active");
     }
   }
-  
-  Actors.registerSheet("swbd-system", SWBDCharacterSheet, { makeDefault: true });
   
   ////////////////////////////////////////////////////////////////
   

@@ -1,9 +1,9 @@
 {
   "Actor": {
 
-    "types": ["personnage","npc","test"],
+    "types": ["PJ","PNJ"],
 
-    "character": {
+    "PJ": {
         "attributes": {
           "pv": { "value": 10, "min": 0, "max": 10 }
         },
@@ -44,20 +44,13 @@
       
     },
     
-    "npc": {
+    "PNJ": {
       "attributes": {
           "pv": { "value": 10, "min": 0, "max": 10 }
         },
         "skills": {
           "athletisme": { "value": 0 }
         }
-    },
-
-    "test": {
-      "attributes": {
-          "pv": { "value": 10, "min": 0, "max": 10 }
-        }
-        
     }
 
   },

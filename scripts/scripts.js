@@ -1,16 +1,28 @@
-import { TestSheet } from "./test-sheet.js"; // Importer la fiche de test
-import { SWBDCharacterSheet } from "./character-sheet.js"; // Importer la fiche personnage
 
-// Enregistrer la fiche personnage comme défaut
-Actors.registerSheet("swbd", SWBDCharacterSheet, {
-    label: "Fiche Personnage",
-    makeDefault: true
+//IMPORTATION DES TEMPLATES DE FICHES DE PERSONNAGES
+
+import { PJfiche } from "./PJ-fiche.js";
+import { PNJfiche } from "./PNJ-fiche.js";
+
+Hooks.once("init", async function() {
+
+     // Désenregistre les fiches d'Actors de base
+    Actors.unregisterSheet("core", ActorSheet);
+    
+    // Enregistre la fiche pour les PJ, applicable uniquement aux acteurs de type "pj"
+    Actors.registerSheet("swbd", PJfiche, { 
+      types: ["PJ"],
+      label: "Fiche PJ",
+      makeDefault: true 
+    });
+    
+    // Enregistre la fiche pour les PNJ, applicable uniquement aux acteurs de type "pnj"
+    Actors.registerSheet("swbd", PNJfiche, { 
+      types: ["PNJ"],
+      label: "Fiche PNJ",
+      makeDefault: true 
+    });
 });
 
-// Enregistrer la fiche test comme option alternative
-Actors.registerSheet("swbd", TestSheet, {
-    label: "Fiche de Test",
-    makeDefault: false
-});
 
-console.log("✅ Fiches de personnage et test enregistrées avec succès !");
+////////////////////////////////////////////////////////////////
