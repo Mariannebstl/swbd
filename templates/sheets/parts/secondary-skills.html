@@ -1,0 +1,156 @@
+<li>
+    <div class="skill-label">Athlétisme</div>
+    <div class="skill-attr">(FOR)</div>
+    <span class="skill-value">{{system.secondarySkills.athletics.value}}</span>
+    <!-- Champ caché pour envoyer "false" si non coché -->
+    <input type="hidden" name="system.secondarySkills.athletics.proficient" value="false">
+    <!-- Checkbox avec un id unique -->
+    <input type="checkbox" id="athletics-proficient" name="system.secondarySkills.athletics.proficient" value="true" {{#if system.secondarySkills.athletics.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Puissance</div>
+    <div class="skill-attr">(FOR)</div>
+    <span class="skill-value">{{system.secondarySkills.power.value}}</span>
+    <input type="hidden" name="system.secondarySkills.power.proficient" value="false">
+    <input type="checkbox" id="power-proficient" name="system.secondarySkills.power.proficient" value="true" {{#if system.secondarySkills.power.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Acrobaties</div>
+    <div class="skill-attr">(DEX)</div>
+    <span class="skill-value">{{system.secondarySkills.acrobatics.value}}</span>
+    <input type="hidden" name="system.secondarySkills.acrobatics.proficient" value="false">
+    <input type="checkbox" id="acrobatics-proficient" name="system.secondarySkills.acrobatics.proficient" value="true" {{#if system.secondarySkills.acrobatics.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Escamotage</div>
+    <div class="skill-attr">(DEX)</div>
+    <span class="skill-value">{{system.secondarySkills.sleightOfHand.value}}</span>
+    <input type="hidden" name="system.secondarySkills.sleightOfHand.proficient" value="false">
+    <input type="checkbox" id="sleightOfHand-proficient" name="system.secondarySkills.sleightOfHand.proficient" value="true" {{#if system.secondarySkills.sleightOfHand.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Discrétion</div>
+    <div class="skill-attr">(DEX)</div>
+    <span class="skill-value">{{system.secondarySkills.stealth.value}}</span>
+    <input type="hidden" name="system.secondarySkills.stealth.proficient" value="false">
+    <input type="checkbox" id="stealth-proficient" name="system.secondarySkills.stealth.proficient" value="true" {{#if system.secondarySkills.stealth.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Réflexe</div>
+    <div class="skill-attr">(DEX)</div>
+    <span class="skill-value">{{system.secondarySkills.reflex.value}}</span>
+    <input type="hidden" name="system.secondarySkills.reflex.proficient" value="false">
+    <input type="checkbox" id="reflex-proficient" name="system.secondarySkills.reflex.proficient" value="true" {{#if system.secondarySkills.reflex.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Fortitude</div>
+    <div class="skill-attr">(CON)</div>
+    <span class="skill-value">{{system.secondarySkills.fortitude.value}}</span>
+    <input type="hidden" name="system.secondarySkills.fortitude.proficient" value="false">
+    <input type="checkbox" id="fortitude-proficient" name="system.secondarySkills.fortitude.proficient" value="true" {{#if system.secondarySkills.fortitude.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Technologie</div>
+    <div class="skill-attr">(INT)</div>
+    <span class="skill-value">{{system.secondarySkills.technology.value}}</span>
+    <input type="hidden" name="system.secondarySkills.technology.proficient" value="false">
+    <input type="checkbox" id="technology-proficient" name="system.secondarySkills.technology.proficient" value="true" {{#if system.secondarySkills.technology.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Histoire</div>
+    <div class="skill-attr">(INT)</div>
+    <span class="skill-value">{{system.secondarySkills.history.value}}</span>
+    <input type="hidden" name="system.secondarySkills.history.proficient" value="false">
+    <input type="checkbox" id="history-proficient" name="system.secondarySkills.history.proficient" value="true" {{#if system.secondarySkills.history.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Investigation</div>
+    <div class="skill-attr">(INT)</div>
+    <span class="skill-value">{{system.secondarySkills.investigation.value}}</span>
+    <input type="hidden" name="system.secondarySkills.investigation.proficient" value="false">
+    <input type="checkbox" id="investigation-proficient" name="system.secondarySkills.investigation.proficient" value="true" {{#if system.secondarySkills.investigation.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Nature</div>
+    <div class="skill-attr">(INT)</div>
+    <span class="skill-value">{{system.secondarySkills.nature.value}}</span>
+    <input type="hidden" name="system.secondarySkills.nature.proficient" value="false">
+    <input type="checkbox" id="nature-proficient" name="system.secondarySkills.nature.proficient" value="true" {{#if system.secondarySkills.nature.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Pilotage</div>
+    <div class="skill-attr">(DEX)</div>
+    <span class="skill-value">{{system.secondarySkills.piloting.value}}</span>
+    <input type="hidden" name="system.secondarySkills.piloting.proficient" value="false">
+    <input type="checkbox" id="piloting-proficient" name="system.secondarySkills.piloting.proficient" value="true" {{#if system.secondarySkills.piloting.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Réparation</div>
+    <div class="skill-attr">(INT)</div>
+    <span class="skill-value">{{system.secondarySkills.repair.value}}</span>
+    <input type="hidden" name="system.secondarySkills.repair.proficient" value="false">
+    <input type="checkbox" id="repair-proficient" name="system.secondarySkills.repair.proficient" value="true" {{#if system.secondarySkills.repair.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Perspicacité</div>
+    <div class="skill-attr">(SAG)</div>
+    <span class="skill-value">{{system.secondarySkills.insight.value}}</span>
+    <input type="hidden" name="system.secondarySkills.insight.proficient" value="false">
+    <input type="checkbox" id="insight-proficient" name="system.secondarySkills.insight.proficient" value="true" {{#if system.secondarySkills.insight.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Médecine</div>
+    <div class="skill-attr">(SAG)</div>
+    <span class="skill-value">{{system.secondarySkills.medicine.value}}</span>
+    <input type="hidden" name="system.secondarySkills.medicine.proficient" value="false">
+    <input type="checkbox" id="medicine-proficient" name="system.secondarySkills.medicine.proficient" value="true" {{#if system.secondarySkills.medicine.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Perception</div>
+    <div class="skill-attr">(SAG)</div>
+    <span class="skill-value">{{system.secondarySkills.perception.value}}</span>
+    <input type="hidden" name="system.secondarySkills.perception.proficient" value="false">
+    <input type="checkbox" id="perception-proficient" name="system.secondarySkills.perception.proficient" value="true" {{#if system.secondarySkills.perception.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Survie</div>
+    <div class="skill-attr">(SAG)</div>
+    <span class="skill-value">{{system.secondarySkills.survival.value}}</span>
+    <input type="hidden" name="system.secondarySkills.survival.proficient" value="false">
+    <input type="checkbox" id="survival-proficient" name="system.secondarySkills.survival.proficient" value="true" {{#if system.secondarySkills.survival.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Volonté</div>
+    <div class="skill-attr">(SAG)</div>
+    <span class="skill-value">{{system.secondarySkills.will.value}}</span>
+    <input type="hidden" name="system.secondarySkills.will.proficient" value="false">
+    <input type="checkbox" id="will-proficient" name="system.secondarySkills.will.proficient" value="true" {{#if system.secondarySkills.will.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Tromperie</div>
+    <div class="skill-attr">(CHA)</div>
+    <span class="skill-value">{{system.secondarySkills.deception.value}}</span>
+    <input type="hidden" name="system.secondarySkills.deception.proficient" value="false">
+    <input type="checkbox" id="deception-proficient" name="system.secondarySkills.deception.proficient" value="true" {{#if system.secondarySkills.deception.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Intimidation</div>
+    <div class="skill-attr">(CHA)</div>
+    <span class="skill-value">{{system.secondarySkills.intimidation.value}}</span>
+    <input type="hidden" name="system.secondarySkills.intimidation.proficient" value="false">
+    <input type="checkbox" id="intimidation-proficient" name="system.secondarySkills.intimidation.proficient" value="true" {{#if system.secondarySkills.intimidation.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Représentation</div>
+    <div class="skill-attr">(CHA)</div>
+    <span class="skill-value">{{system.secondarySkills.performance.value}}</span>
+    <input type="hidden" name="system.secondarySkills.performance.proficient" value="false">
+    <input type="checkbox" id="performance-proficient" name="system.secondarySkills.performance.proficient" value="true" {{#if system.secondarySkills.performance.proficient}}checked{{/if}}>
+  </li>
+  <li>
+    <div class="skill-label">Persuasion</div>
+    <div class="skill-attr">(CHA)</div>
+    <span class="skill-value">{{system.secondarySkills.persuasion.value}}</span>
+    <input type="hidden" name="system.secondarySkills.persuasion.proficient" value="false">
+    <input type="checkbox" id="persuasion-proficient" name="system.secondarySkills.persuasion.proficient" value="true" {{#if system.secondarySkills.persuasion.proficient}}checked{{/if}}>
+  </li>

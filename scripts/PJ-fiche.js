@@ -16,63 +16,51 @@ export class PJfiche extends ActorSheet {
       return data;
     }
   
-    
+   ///////////////////ECOUTEURS D'EVENEMENTS///////////////
   
-  ///////////////////ECOUTEURS D'EVENEMENTS///////////////
-  
-    activateListeners(html) {
-      super.activateListeners(html);
-  
-      // Sélection de l'image et mise à jour du token
-      html.find("#character-image").click(async () => {
-        const fp = new FilePicker({
-          type: "image",
-          current: this.actor.img,
-          callback: async (path) => {
-            html.find("#character-image").attr("src", path);
-            await this.actor.update({ img: path });
-          },
-          top: 100,
-          left: 100
-        });
-        fp.browse();
+   activateListeners(html) {
+    super.activateListeners(html);
+
+    // Sélection de l'image et mise à jour du token
+    html.find("#character-image").click(async () => {
+      const fp = new FilePicker({
+        type: "image",
+        current: this.actor.img,
+        callback: async (path) => {
+          html.find("#character-image").attr("src", path);
+          await this.actor.update({ img: path });
+        },
+        top: 100,
+        left: 100
       });
-  
-      // Sauvegarde automatique des changements sur la fiche
-      html.find("input, select, textarea").change(async (event) => {
-        const target = event.target;
-        const name = target.name;
-        let value;
-  
-        if (target.type === "number") {
-          value = parseInt(target.value);
-        } else {
-          value = target.value;
-        }
-  
-        await this.actor.update({ [`system.${name}`]: value });
-      });
-  
-  
-      // Gestion des onglets
-      html.find(".tab-button").click((event) => {
-        const tab = event.currentTarget.dataset.tab;
-        html.find(".tab-content").hide();
-        html.find(`#${tab}`).show();
-  
-        // Ajouter la classe active
-        html.find(".tab-button").removeClass("active");
-        html.find(event.currentTarget).addClass("active");
+      fp.browse();
     });
+
+    // Gestion des onglets
+    html.find(".tab-button").click((event) => {
+      const tab = event.currentTarget.dataset.tab;
+      html.find(".tab-content").hide();
+      html.find(`#${tab}`).show();
+
+      // Ajouter la classe active
+      html.find(".tab-button").removeClass("active");
+      html.find(event.currentTarget).addClass("active");
+  });
+
+
+  // Afficher l'onglet "Compétences" par défaut
+  html.find("#skills").show();
+  html.find('.tab-button[data-tab="skills"]').addClass("active");
+
   
-  
-    // Afficher l'onglet "Compétences" par défaut
-    html.find("#skills").show();
-    html.find('.tab-button[data-tab="skills"]').addClass("active");
-    }
+
+
   }
+
+
+////////////////////////////////////////////////////////////////
+ 
   
-  ////////////////////////////////////////////////////////////////
-  
+}
   
   
